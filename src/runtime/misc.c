@@ -129,6 +129,17 @@ void memmov (dst, src, length)
 
 #endif /* USING_MEMMOV */
 
+char *xmalloccorrige(asize_t size) {
+  char *p;
+#ifdef CAML_SIXTYFOUR
+/* aberrant mais sinon, les blocs peuvent ne pas être contigus */
+  p=xmalloc(size);
+  xfree(p);
+#endif
+  p=xmalloc(size);
+  return(p);
+}
+
 char * aligned_malloc (size, modulo)
      asize_t size;
      int modulo;
@@ -136,7 +147,7 @@ char * aligned_malloc (size, modulo)
   char *raw_mem;
   unsigned long aligned_mem;
                                                  Assert (modulo < Page_size);
-  raw_mem = (char *) xmalloc (size + Page_size);
+  raw_mem = (char *) xmalloccorrige (size + Page_size);
   if (raw_mem == NULL) return NULL;
   raw_mem += modulo;		/* Address to be aligned */
   aligned_mem = (((unsigned long) raw_mem / Page_size + 1) * Page_size);

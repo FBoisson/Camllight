@@ -34,7 +34,7 @@ CAML_ONLY_PACKAGES=libnum libstr lorder
 CAML_PACKAGES=libunix debugger camlsearch mletags profiler
 X11_PACKAGES=libgraph
 TK_PACKAGES=camltk4
-
+CAMl_ALL=caml_all
 # All architectures should support the following:
 # PACKAGES=$(TEXT_PACKAGES)
 # All reasonable architectures should support the following:
@@ -44,15 +44,15 @@ TK_PACKAGES=camltk4
 # All Unix platforms with a correct installation for X Windows should also support
 # the following:
 # PACKAGES=\
-#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES)
+#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(CAML_ALL)
 # All Unix platforms with a correct installation of X and Tcl/Tk library
 # should support the entire collection of packages:
 # PACKAGES=\
-#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES)
+#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES) $(CAML_ALL)
 #
 # Your setting:
 PACKAGES=\
- $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES)
+ $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES) $(CAML_ALL)
 
 #(1) Which C compiler to use with which flags.
 

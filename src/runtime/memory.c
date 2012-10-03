@@ -55,7 +55,9 @@ static char *expand_heap (request)
     new_page_table = (char *) xmalloc (new_page_table_size);
     if (new_page_table == NULL){
       gc_message ("No room for growing page table\n", 0);
+/* ce xfree provoque un gros plantage, invalid pointer
       xfree (mem);
+*/
       return NULL;
     }
   }
