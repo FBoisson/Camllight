@@ -1,0 +1,13 @@
+#!/bin/sh
+# permet de faire un test sans avoir à tout installer, il suffit
+# d'installer le paquet camllight avant
+# auparavant faire un make dans le répertoire src
+# à adapter
+GITDIR=~/GitCaml
+cd $GITDIR/src
+make
+cd runtime
+make
+# attention à avoir les droits rwx sur /usr/bin/camlrun.debug
+cat camlrun > /usr/bin/camlrun.debug
+/usr/bin/camlrun.debug /usr/lib/caml-light/camltop -stdlib /usr/lib/caml-light < $GITDIR/Test/test.ml
