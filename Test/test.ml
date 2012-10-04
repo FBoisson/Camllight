@@ -1,8 +1,4 @@
-let rec puissance x = function
-  | 0 -> 1
-  | n -> x*(puissance x (n-1));;
-
-let rec puissance x = function
+llet rec puissance x = function
   | 0 -> 1
   | 1 -> x
   | n when (n mod 2=0) -> let c= (puissance x (n/2)) in c*c
@@ -22,12 +18,15 @@ let rec randlist  = function
   | 0 -> []
   | n -> (random__int 1432)::(randlist (n-1));;
 
+(* fait le bug *)
 
 let c n = evalue (randlist n) 12;;
 
 for i = 1 to 10  do 
   (function  _ -> ()) (c 131020);
 done ;;
+
+(* occupation de la mémoire jusqu'à 8G et + *)
 
 let debug s i = print_string s;print_int i;print_newline ();;
 
