@@ -1,4 +1,4 @@
-llet rec puissance x = function
+let rec puissance x = function
   | 0 -> 1
   | 1 -> x
   | n when (n mod 2=0) -> let c= (puissance x (n/2)) in c*c
