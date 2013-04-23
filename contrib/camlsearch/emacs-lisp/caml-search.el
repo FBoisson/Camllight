@@ -30,7 +30,7 @@
 (defvar caml-search-files-alist
   '((""
      "."
-     "/usr/local/lib/caml-light"))
+     "/usr/lib/caml-light"))
   "*A list which determines which files should be used for a given
 buffer.  This is not really an association list, in that all elements
 are checked.  The CAR of each element of this list is a pattern

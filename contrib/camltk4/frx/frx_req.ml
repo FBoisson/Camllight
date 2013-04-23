@@ -5,7 +5,7 @@
  * jargon).
 *)
 
-let version = "$Id: frx_req.ml,v 1.5 1996-05-30 11:50:30 rouaix Exp $"
+let version = "$Id: frx_req.ml,v 1.5 1996/05/30 11:50:30 rouaix Exp $"
 ;;
 (*
  * Simple requester 

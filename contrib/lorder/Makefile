@@ -1,5 +1,5 @@
 MANDIR=/usr/man/man1
-BINDIR=/usr/local/bin
+BINDIR=/usr/bin
 
 CPP=/lib/cpp -P -Dunix
 

@@ -1,5 +1,5 @@
 ############## Standard Tk Widgets and functions ##############
-## $Id: Widgets.src,v 1.17 1995-07-03 14:46:17 rouaix Exp $
+## $Id: Widgets.src,v 1.17 1995/07/03 14:46:17 rouaix Exp $
 type Widget external
 type symbol external
 

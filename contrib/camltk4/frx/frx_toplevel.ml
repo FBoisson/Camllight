@@ -1,6 +1,6 @@
 #open "tk";;
 
-let version = "$Id: frx_toplevel.ml,v 1.1 1995-07-26 16:13:07 rouaix Exp $"
+let version = "$Id: frx_toplevel.ml,v 1.1 1995/07/26 16:13:07 rouaix Exp $"
 ;;
 
 let make_visible atom =

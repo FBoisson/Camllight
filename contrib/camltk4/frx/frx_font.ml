@@ -1,7 +1,7 @@
 #open "tk";;
 #open "support";;
 
-let version = "$Id: frx_font.ml,v 1.3 1996-05-24 15:21:44 rouaix Exp $"
+let version = "$Id: frx_font.ml,v 1.3 1996/05/24 15:21:44 rouaix Exp $"
 ;;
 
 (* 

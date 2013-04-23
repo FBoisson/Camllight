@@ -1,4 +1,4 @@
-(* $Id: run.ml,v 1.4 1995-02-08 18:57:21 xleroy Exp $ *)
+(* $Id: run.ml,v 1.4 1995/02/08 18:57:21 xleroy Exp $ *)
 
 #open "main";;
 

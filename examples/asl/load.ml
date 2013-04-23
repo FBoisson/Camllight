@@ -1,4 +1,4 @@
-(* $Id: load.ml,v 1.3 1994-11-10 09:57:20 xleroy Exp $ *)
+(* $Id: load.ml,v 1.3 1994/11/10 09:57:20 xleroy Exp $ *)
 
 #open "token";;
 #open "parser";;

@@ -31,11 +31,11 @@ The tag table is written to the tag file (default: TAGS in the current
 directory). 
 
 One may also consider including TAG information from the standard library
-(normally in /usr/local/lib/caml-light), thus providing instant
+(normally in /usr/lib/caml-light), thus providing instant
 access to the documented interfaces of the library.
 
  % mletags *.{ml,mli} \\
-          /usr/local/lib/caml-light/*.mli
+          /usr/lib/caml-light/*.mli
 
 
 .SH OPTIONS

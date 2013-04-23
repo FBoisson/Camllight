@@ -75,7 +75,7 @@ you probably think of something with type
 ; the following command will search for such functions in the standard library:
 
 .B \ camlsearch 
--e "string -> int" /usr/local/lib/caml-light
+-e "string -> int" /usr/lib/caml-light
 
 This gives as a result:
 
@@ -101,7 +101,7 @@ Typical isomorphisms are curryfication and argument swap, as is apparent from
 the following query:
 
 .B \ camlsearch 
--e "'a list * ('a -> 'b) -> 'b list" /usr/local/lib/caml-light
+-e "'a list * ('a -> 'b) -> 'b list" /usr/lib/caml-light
  list__map : ('b -> 'a) -> 'b list -> 'a list
 
 A less typical isomorphism identifies a type of the shape 
@@ -111,7 +111,7 @@ with the type
 like in the following example:
 
 .B \ camlsearch 
--e "unit" /usr/local/lib/caml-light/set.zi
+-e "unit" /usr/lib/caml-light/set.zi
  set__iter : ('a -> 'b) -> 'a set__t -> unit
 
 Since this isomorphism usually identifies too many types, it is possible to
@@ -142,7 +142,7 @@ option.
 For example, 
 
 .B \ camlsearch 
--m "int list * (int -> int) -> int list" /usr/local/lib/caml-light
+-m "int list * (int -> int) -> int list" /usr/lib/caml-light
 
 retrieves the following functions with more general types:
 
@@ -155,7 +155,7 @@ variables prefixed with an underscore can be instantiated to whatever type.
 This can be very useful to find out how to build values of a specific type:
 
 .B \ camlsearch 
--l "_x -> char" /usr/local/lib/caml-light
+-l "_x -> char" /usr/lib/caml-light
  lexing__get_lexeme_char : lexing__lexbuf -> int -> char
  lexing__get_next_char : lexing__lexbuf -> char
  io__input_char : io__in_channel -> char

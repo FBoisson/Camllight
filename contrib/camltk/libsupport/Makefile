@@ -9,8 +9,8 @@ CAMLYACC=camlyacc -v
 CAMLLEX=camllex
 CAMLDEP=../../../src/tools/camldep
 X11_INCLUDES=/usr/include
-TCLINCLDIR=/usr/local/lib/tcl/include
-TKINCLDIR=/usr/local/lib/tk/include
+TCLINCLDIR=/usr/lib/tcl/include
+TKINCLDIR=/usr/lib/tk/include
 RANLIBTEST=test -f /usr/bin/ranlib -o -f /bin/ranlib
 RANLIB=ranlib
 

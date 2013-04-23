@@ -1,6 +1,6 @@
 # Overriden by caller
-LIBDIR=/usr/local/lib/caml-light
-BINDIR=/usr/local/bin
+LIBDIR=/usr/lib/caml-light
+BINDIR=/usr/bin
 
 CAMLC=camlc
 CAMLCOMP=$(CAMLC) -c
@@ -16,8 +16,8 @@ UNIXDIR=../../libunix
 
 # These options are overriden when called from ../Makefile
 X11_LIB=/usr/X11R6/lib
-TCLLIBDIR=/usr/local/lib/tcl7.4/lib
-TKLIBDIR=/usr/local/lib/tk4.0/lib
+TCLLIBDIR=/usr/lib/tcl7.4/lib
+TKLIBDIR=/usr/lib/tk4.0/lib
 TKLIBS=-ltk -ltcl -lX11
 
 TKLINKOPT=-ccopt -L$(TCLLIBDIR) -ccopt -L$(TKLIBDIR) -ccopt -L$(X11_LIB) \

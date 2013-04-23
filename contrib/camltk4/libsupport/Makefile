@@ -9,11 +9,11 @@ CAMLDEP=../../../src/tools/camldep
 RANLIBTEST=test -f /usr/bin/ranlib -o -f /bin/ranlib
 RANLIB=ranlib
 
-LIBDIR=/usr/local/lib/caml-light
+LIBDIR=/usr/lib/caml-light
 
 X11_INCLUDES=/usr/include
-TCLINCLDIR=/usr/local/lib/tcl7.4/include
-TKINCLDIR=/usr/local/lib/tk4.0/include
+TCLINCLDIR=/usr/lib/tcl7.4/include
+TKINCLDIR=/usr/lib/tk4.0/include
 
 all: catchexc.zo hashtblc.zo support.zo protocol.zo textvariable.zo optionmenu.zo \
      camltk.zi libcamltk4.a

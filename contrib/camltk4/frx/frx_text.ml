@@ -1,6 +1,6 @@
 #open "tk";;
 
-let version = "$Id: frx_text.ml,v 1.6 1996-05-30 11:50:30 rouaix Exp $"
+let version = "$Id: frx_text.ml,v 1.6 1996/05/30 11:50:30 rouaix Exp $"
 ;;
 
 (* 

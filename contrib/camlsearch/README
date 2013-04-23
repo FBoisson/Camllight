@@ -8,7 +8,7 @@ DESCRIPTION
      type string -> int; the following command will search for
      such functions in the standard library:
 
-      camlsearch -e "string -> int" /usr/local/lib/caml-light
+      camlsearch -e "string -> int" /usr/lib/caml-light
 
      This gives as a result:
 
@@ -29,13 +29,13 @@ DESCRIPTION
      Typical isomorphisms are curryfication and argument swap, as
      is apparent from the following query:
 
-      camlsearch -e "'a list * ('a -> 'b) -> 'b list" /usr/local/lib/caml-light
+      camlsearch -e "'a list * ('a -> 'b) -> 'b list" /usr/lib/caml-light
       list__map : ('b -> 'a) -> 'b list -> 'a list
 
      A less typical isomorphism identifies a type of the shape A
      -> unit with the type unit like in the following example:
 
-      camlsearch -e "unit" /usr/local/lib/caml-light/set.zi
+      camlsearch -e "unit" /usr/lib/caml-light/set.zi
       set__iter : ('a -> 'b) -> 'a set__t -> unit
 
      Since this isomorphism usually identifies too many types, it
@@ -58,7 +58,7 @@ SEARCHES BY TYPE MATCHING
 
      For example,
 
-      camlsearch -m "int list * (int -> int) -> int list" /usr/local/lib/caml-light
+      camlsearch -m "int list * (int -> int) -> int list" /usr/lib/caml-light
 
      retrieves the following functions with more general types:
 
@@ -71,7 +71,7 @@ SEARCHES BY TYPE MATCHING
      instantiated to whatever type.  This can be very useful to
      find out how to build values of a specific type:
 
-      camlsearch -l "_x -> char" /usr/local/lib/caml-light
+      camlsearch -l "_x -> char" /usr/lib/caml-light
       lexing__get_lexeme_char : lexing__lexbuf -> int -> char
       lexing__get_next_char : lexing__lexbuf -> char
       io__input_char : io__in_channel -> char

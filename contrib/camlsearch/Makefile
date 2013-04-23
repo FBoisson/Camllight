@@ -4,10 +4,10 @@ COMPLIBDIR=../../../src/compiler
 UNIXLIBDIR=../../libunix
 
 # Overriden when called from ../Makefile
-BINDIR=/usr/local/bin
+BINDIR=/usr/bin
 MANEXT=l
-MANDIR=/usr/local/man/man$(MANEXT)
-EMACSLISPDIR=/usr/local/lib/emacs/site-lisp
+MANDIR=/usr/man/man$(MANEXT)
+EMACSLISPDIR=/usr/lib/emacs/site-lisp
 
 ### End of system dependent configuration section
 

@@ -49,7 +49,7 @@ stdlibp.zo: profiler.ml profiler.mli io.ml
 install: 
 	cp camlpro $(LIBDIR)/camlinstr
 	rm -f $(BINDIR)/camlpro
-	ln -s $(LIBDIR)/camlinstr $(BINDIR)/camlpro
+	ln -sf /usr/lib/caml-light/camlinstr $(BINDIR)/camlpro
 	cp stdlibp.zo prodump.zo profiler.zi $(LIBDIR)
 
 clean:

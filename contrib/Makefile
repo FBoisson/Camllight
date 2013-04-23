@@ -34,7 +34,7 @@ CAML_ONLY_PACKAGES=libnum libstr lorder
 CAML_PACKAGES=libunix debugger camlsearch mletags profiler
 X11_PACKAGES=libgraph
 TK_PACKAGES=camltk4
-CAMl_ALL=caml_all
+
 # All architectures should support the following:
 # PACKAGES=$(TEXT_PACKAGES)
 # All reasonable architectures should support the following:
@@ -44,15 +44,15 @@ CAMl_ALL=caml_all
 # All Unix platforms with a correct installation for X Windows should also support
 # the following:
 # PACKAGES=\
-#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(CAML_ALL)
+#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES)
 # All Unix platforms with a correct installation of X and Tcl/Tk library
 # should support the entire collection of packages:
 # PACKAGES=\
-#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES) $(CAML_ALL)
+#  $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES)
 #
 # Your setting:
 PACKAGES=\
- $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES) $(CAML_ALL)
+ $(TEXT_PACKAGES) $(CAML_ONLY_PACKAGES) $(CAML_PACKAGES) $(X11_PACKAGES) $(TK_PACKAGES)
 
 #(1) Which C compiler to use with which flags.
 
@@ -175,8 +175,8 @@ BIGNUM_ARCH=C
 # TKINCLDIR=/usr/pkg/include/
 #
 # Your setting:
-TCLINCLDIR=/usr/local/include/tcl8.5
-TKINCLDIR=/usr/local/include/tk8.5
+TCLINCLDIR=/usr/include/tcl8.5
+TKINCLDIR=/usr/include/tk8.5
 
 #(3.4.2) Name of the directories where the libtcl.a and libtk.a libraries can be found
 # Needed only for the "camltk" package.
@@ -214,12 +214,12 @@ TCLLIBDIR=/usr/local/lib
 # For *BSD
 # TKLIBS=-ltk84 -ltcl84 -lX11
 # For OpenBSD
-# TKLIBS=-ltk85 -ltcl85 -lX11
+# TKLIBS=-ltk8.5 -ltcl8.5 -lX11
 # For NetBSD
 # TKLIBS=-ltk84 -ltcl84 -lX11
 #
 # Your setting:
-TKLIBS=-ltk85 -ltcl85 -lX11
+TKLIBS=-ltk8.5 -ltcl8.5 -lX11
 
 #(4) Where to install the text files for LaTeX and emacs.
 

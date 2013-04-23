@@ -1,4 +1,4 @@
-(* $Id: main.ml,v 1.4 1998-03-12 18:44:01 weis Exp $ *)
+(* $Id: main.ml,v 1.4 1998/03/12 18:44:01 weis Exp $ *)
 
 #open "stream";;
 #open "asl";;

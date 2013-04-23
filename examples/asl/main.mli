@@ -1,4 +1,4 @@
-(* $Id: main.mli,v 1.3 1994-11-10 09:57:22 xleroy Exp $ *)
+(* $Id: main.mli,v 1.3 1994/11/10 09:57:22 xleroy Exp $ *)
 
 value read_fun : unit -> char;;
 value go : unit -> unit;;

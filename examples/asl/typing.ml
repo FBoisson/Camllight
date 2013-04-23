@@ -1,4 +1,4 @@
-(* $Id: typing.ml,v 1.7 1998-03-12 18:44:03 weis Exp $ *)
+(* $Id: typing.ml,v 1.7 1998/03/12 18:44:03 weis Exp $ *)
 
 #open "parser";;
 

@@ -1,4 +1,4 @@
-(* $Id: token.mli,v 1.3 1994-11-10 09:57:26 xleroy Exp $ *)
+(* $Id: token.mli,v 1.3 1994/11/10 09:57:26 xleroy Exp $ *)
 
 #open "stream";;
 

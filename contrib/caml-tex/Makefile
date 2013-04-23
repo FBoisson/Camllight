@@ -1,12 +1,15 @@
 # Overriden when called from ../Makefile
-BINDIR=/usr/local/bin
-TEXINPUTDIR=/usr/local/tex/inputs
+BINDIR=/usr/bin
+TEXINPUTDIR=/usr/tex/inputs
 MANEXT=1
-MANDIR=/usr/local/man/man$(MANEXT)
+MANDIR=/usr/man/man$(MANEXT)
 
 all:
 
 install:
+	mkdir -p $(BINDIR)
+	mkdir -p $(TEXINPUTDIR)
+	mkdir -p $(MANDIR)
 	- cp caml-tex $(BINDIR)/caml-tex
 	- cp caml.sty caml-sl.sty $(TEXINPUTDIR)
 	- cp caml-tex.1 $(MANDIR)/caml-tex.$(MANEXT)

@@ -7,15 +7,15 @@ CPP=/lib/cpp -P
 RANLIBTEST=test -f /usr/bin/ranlib -o -f /bin/ranlib
 RANLIB=ranlib
 MANEXT=1
-MANDIR=/usr/local/man/man$(MANEXT)
-BINDIR=/usr/local/bin
-LIBDIR=/usr/local/lib/caml-light
+MANDIR=/usr/man/man$(MANEXT)
+BINDIR=/usr/bin
+LIBDIR=/usr/lib/caml-light
 X11_INCLUDES=/usr/include
 X11_LIB=/usr/X11R6/lib
-TCLINCLDIR=/usr/local/lib/tcl7.4/include
-TKINCLDIR=/usr/local/lib/tk4.0/include
-TCLLIBDIR=/usr/local/lib/tcl7.4/lib
-TKLIBDIR=/usr/local/lib/tk4.0/lib
+TCLINCLDIR=/usr/lib/tcl7.4/include
+TKINCLDIR=/usr/lib/tk4.0/include
+TCLLIBDIR=/usr/lib/tcl7.4/lib
+TKLIBDIR=/usr/lib/tk4.0/lib
 #Does not work on SunOS
 #Work on PWS under Digital Unix.
 TKLIBS=-ltk4.0 -ltcl7.4 -lX11

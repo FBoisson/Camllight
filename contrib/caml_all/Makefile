@@ -12,7 +12,7 @@ X11_LIB=/usr/lib
 
 LIBGRAPH_CUSTOM= ../libgraph/graphics.zo ../libgraph/libgraph.a  
 
-LIBDIR=/usr/local/lib/caml-light
+LIBDIR=/usr/lib/caml-light
 
 caml_all: 
 	$(CAMLMKTOP) -o caml_all -custom $(LIBUNIX_CUSTOM) $(LIBNUM_CUSTOM) $(LIBSTR_CUSTOM) $(LIBGRAPH_CUSTOM) -ccopt -L$(X11_LIB) -lX11
@@ -22,7 +22,7 @@ all : caml_all
 
 
 clean: 
-	rm caml_all
+	rm -f caml_all
 
 install: caml_all
 	cp caml_all $(LIBDIR) 

@@ -1,6 +1,6 @@
 #open "tk";;
 
-let version = "$Id: frx_listbox.ml,v 1.3 1996-05-24 15:21:44 rouaix Exp $"
+let version = "$Id: frx_listbox.ml,v 1.3 1996/05/24 15:21:44 rouaix Exp $"
 ;;
 (* 
  * Link a scrollbar and a listbox

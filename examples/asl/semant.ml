@@ -1,4 +1,4 @@
-(* $Id: semant.ml,v 1.6 1998-03-12 18:44:02 weis Exp $ *)
+(* $Id: semant.ml,v 1.6 1998/03/12 18:44:02 weis Exp $ *)
 
 #open "parser";;
 

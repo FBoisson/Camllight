@@ -3,7 +3,7 @@
 # These options are overriden when called from ../Makefile
 CC=cc
 OPTS=
-LIBDIR=/usr/local/lib/caml-light
+LIBDIR=/usr/lib/caml-light
 CPP=/lib/cpp -P
 
 # Compilation options

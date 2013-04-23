@@ -1,6 +1,6 @@
 #open "tk";;
 
-let version = "$Id: frx_widget.ml,v 1.2 1996-05-24 15:21:47 rouaix Exp $"
+let version = "$Id: frx_widget.ml,v 1.2 1996/05/24 15:21:47 rouaix Exp $"
 ;;
 
 (* Make a window (toplevel widget) resizeable *)
