@@ -5,6 +5,7 @@ This version is a release of the first stable version of Camllight (0.75).
 * Minor bugs resolved
 * Adaptation to new gcc/libc6
 * change to OCaml License
+* add caml_all 
 
   This is release 0.75 of the Caml Light system, for Unix machines.
 
