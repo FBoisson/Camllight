@@ -4,6 +4,7 @@
 #include "mlvalues.h"
 #include "alloc.h"
 #include "nat.h"
+#include "memory.h"
 
 /* For debugging. */
 #define Assert(cond,msg) /**/
